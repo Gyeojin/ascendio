@@ -1,0 +1,22 @@
+.slide {width: 100%; height: 100vh;}
+.slide .slide-box {width: 100%; height: 100%; overflow: hidden;}
+.slide .slide-box .slide-images{height: 100%;}
+.slide .slide-box .each-image {height: 100%; opacity: 0.7;}
+.slide .slide-box .each-image:nth-child(1) {background: url(/ascendio/img/slide_03.jpg) no-repeat center center; background-size: cover;}
+.slide .slide-box .each-image:nth-child(2) {background: url(/ascendio/img/slide_01.jpg) no-repeat center center; background-size: cover;}
+.slide .slide-box .each-image:nth-child(3) {background: url(/ascendio/img/slide_02.jpg) no-repeat center center; background-size: cover;}
+.slide .slide-box .each-image:nth-child(4) {background: url(/ascendio/img/slide_04.jpg) no-repeat center center; background-size: cover;}
+
+
+
+header{width: 100%; height: auto;}
+header .nav{width: 100%; position: absolute; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; padding: 50px 0;}
+header .nav .logo {width: 13%; margin-left: 40px; padding-left: 10px; position: relative; top: -12px;}
+header .nav .logo img {width: 100%;}
+
+header .main-nav {display: flex; justify-content: space-between; width: 50%; font-size: 16px;}
+
+header .menu {width: 60px; height: 60px; border-radius: 30px; background: #131610; margin-right: 50px; position: relative;}
+header .menu span {width: 60%; height: 1px; background: #fff; display: block; margin:auto; position: absolute; left: 50%; transform: translateX(-50%); top: 50%;}
+header .menu span::before {content: ""; width: 100%; height: 1px; background: #fff; display: block; margin: auto; position: absolute; top: -10px;}
+header .menu span::after {content: ""; width: 60%; height: 1px; background: #fff; display: block; margin: auto; position: absolute; top: 10px;}

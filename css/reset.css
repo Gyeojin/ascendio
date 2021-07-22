@@ -1,0 +1,21 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Remove Default Style */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a {color: #fff; text-decoration: none;}
+ol, ul {list-style: none;}
+input, button, textarea{outline: 0; border-radius: 0; border: 0;}
+input::placeholder {color: #ccc; font-size: 12px;}
+textarea{resize: none;}
+img {display: block;}
+em{font-style: normal;}
+b{font-weight: normal;}
+
+.center {width: 100%; margin: auto; max-width: 1230px; height: auto;}
+
+.wrap {width: 100%; height: auto; position: relative;}
+.clearfix{display: block; content: ''; clear: both;}
+body{font-size: 14px; font-family: 'Roboto', 'Noto Sans KR', sans-serif; background:#1d1d1b; color:#5f5f5f; _height: 3000px;}
