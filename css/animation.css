@@ -1,0 +1,9 @@
+@keyframes fadein{
+  0%{margin-left: 150px; opacity:0;}
+  100%{margin-left: 150px; opacity:1;}
+}
+
+@keyframes fill-bar {
+  0%{width: 0;}
+  100%{width: 100%;}
+}
