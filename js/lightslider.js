@@ -344,6 +344,7 @@
                     thumbWidth = (elSize - ((settings.thumbItem * (settings.thumbMargin)) - settings.thumbMargin)) / settings.thumbItem;
                     var $children = $slide.find('.lslide');
                     var length = $slide.find('.lslide').length;
+                    //console.log(length);
                     var i = 0,
                         pagers = '',
                         v = 0;
@@ -360,10 +361,11 @@
                         if (settings.gallery === true) {
                             pagers += '<li style="width:100%;' + property + ':' + thumbWidth + 'px;' + gutter + ':' + settings.thumbMargin + 'px"><a href="#"><img src="' + thumb + '" /></a></li>';
                         } else {
+                            const Arr = [['THE DARK HOLE','GANGNEUNG','THE SWORDMAN','THE NEIGHBORHOOD'],['DRAMA','FILM','FILM','FILM']];
                             pagers += `<li>
                             <a href="#"></a>
-                            <h2>THE DARK HOLE</h2>
-                            <b>DRAMA</b>
+                            <h2>${Arr[0][i]}</h2>
+                            <p>${Arr[1][i]}</p>
                             </li>`;
                         }
                         if (settings.mode === 'slide') {
