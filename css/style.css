@@ -1,21 +1,21 @@
 .slide {width: 100%; height: 100vh;}
 .slide .slide-box {width: 100%; height: 100%; overflow: hidden;}
 .slide .slide-box .slide-images{height: 100%!important;}
-.slide .slide-box .each-image {height: 100%; opacity: 0.7;}
-.slide .slide-box .each-image:nth-child(1) {background: url(/ascendio/img/slide_03.jpg) no-repeat center center; background-size: cover; animation: slide 0.8 1; animation-fill-mode: forwards;}
-.slide .slide-box .each-image:nth-child(2) {background: url(/ascendio/img/slide_01.jpg) no-repeat center center; background-size: cover;}
-.slide .slide-box .each-image:nth-child(3) {background: url(/ascendio/img/slide_02.jpg) no-repeat center center; background-size: cover;}
-.slide .slide-box .each-image:nth-child(4) {background: url(/ascendio/img/slide_04.jpg) no-repeat center center; background-size: cover;}
+.slide .slide-box .each-image {height: 100%;}
+.slide .slide-box .each-image .img-box {width: 100%; height: 100%;}
+.slide .slide-box .each-image img {width: 100%; opacity: 0.7;}
 .slide .slide-box .each-image .txt {width: 100%; height: auto; position: absolute; top: 50%; transform: translateY(-50%); padding-left: 5%;}
-.slide .slide-box .each-image .txt h3{font-size: 4.4rem;}
-.slide .slide-box .each-image .txt h4{font-size: 2.1rem;}
-.slide .slide-box .each-image .txt p {font-size: 1.125rem; font-weight: 300; max-width: 500px; height: 50px; overflow: hidden; margin: 20px 0;}
-.slide .slide-box .each-image .txt a{font: 0.8rem; font-weight: 200; letter-spacing: 1.5px;}
+.slide .slide-box .each-image .txt h3{font-size: 4.4rem; margin-left: 150px; opacity: 0;}
+.slide .slide-box .each-image .txt h4{font-size: 2.1rem; margin-left: 150px; opacity: 0;}
+.slide .slide-box .each-image .txt p {font-size: 1.125rem; font-weight: 300; max-width: 500px; height: 50px; overflow: hidden; margin: 20px 0; opacity: 0;}
+.slide .slide-box .each-image .txt a{font: 0.8rem; font-weight: 200; letter-spacing: 1.5px; margin-left: 150px;  opacity: 0;}
 .slide .slide-box .each-image .txt a i {padding: 0 5px; font-size: 16px;}
 
-.slide .slide-box .each-image .txt.active h3 {animation:fadein 0.5 1; animation-fill-mode: forwards; animation-delay: 0.3s;}
-.slide .slide-box .each-image .txt.active h4 {animation:fadein 0.5 1; animation-fill-mode: forwards; animation-delay: 0.5s;}
-.slide .slide-box .each-image .txt.active p {animation:fadein 0.5 1; animation-fill-mode: forwards; animation-delay: 0.7s;}
+.slide .slide-box .each-image.active img{animation:slide 8s 1; animation-fill-mode: forwards;}
+.slide .slide-box .each-image.active h3 {animation:fadein 1s 1; animation-fill-mode: forwards; animation-delay: 0.3s;}
+.slide .slide-box .each-image.active h4 {animation:fadein 1s 1; animation-fill-mode: forwards; animation-delay: 0.5s;}
+.slide .slide-box .each-image.active p {animation:fadein 1s 1; animation-fill-mode: forwards; animation-delay: 0.7s;}
+.slide .slide-box .each-image.active a {animation:fadein 1s 1; animation-fill-mode: forwards; animation-delay: 0.7s;}
 .lSPager li h2 {font-size: 18px; font-weight: 600; margin:20px 0 10px; text-align: left;}
 .lSPager li p {font-size: 16px; font-weight: 300; text-align: left;}
  

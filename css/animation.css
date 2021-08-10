@@ -1,6 +1,6 @@
 @keyframes fadein{
   0%{margin-left: 150px; opacity:0;}
-  100%{margin-left: 150px; opacity:1;}
+  100%{margin-left: 0; opacity:1;}
 }
 
 @keyframes fill-bar {
