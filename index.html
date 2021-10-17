@@ -91,15 +91,90 @@
         </div>
       </div>
     </header>
-    <section class="artist">
-      <div class="artist-tit">
-        <h2>Artist</h2>
+    <section class="artist wrap">
+      <div class="center">
+        <div class="artist-tit">
+          <div class="star"><img src="/ascendio/img/ico_star.png" alt=""></div>
+          <h2>Artist</h2>
+          <div class="under_line"></div>
+        </div>
+      </div>
+      <div class="artist_container">
+        <div class="total_scrollbox">
+          <!--each box-->
+          <div class="artist_each_box">
+            <div class="each_img">
+              <img src="/ascendio/img/artist_01.jpg" alt="">
+            </div>
+            <div class="each_text">
+              <h2>TAEYONG</h2>
+              <h3>이태용</h3>
+            </div>
+          </div>
+          <!--End of each box-->
+          <!--each box-->
+          <div class="artist_each_box">
+            <div class="each_img">
+              <img src="/ascendio/img/artist_02.jpg" alt="">
+            </div>
+            <div class="each_text">
+              <h2>HEACHAN</h2>
+              <h3>해찬</h3>
+            </div>
+          </div>
+          <!--End of each box-->
+          <!--each box-->
+          <div class="artist_each_box">
+            <div class="each_img">
+              <img src="/ascendio/img/artist_03.jpg" alt="">
+            </div>
+            <div class="each_text">
+              <h2>JAEHYUN</h2>
+              <h3>재현</h3>
+            </div>
+          </div>
+          <!--End of each box-->
+          <!--each box-->
+          <div class="artist_each_box">
+            <div class="each_img">
+              <img src="/ascendio/img/artist_04.jpg" alt="">
+            </div>
+            <div class="each_text">
+              <h2>JHONNY</h2>
+              <h3>쟈니</h3>
+            </div>
+          </div>
+          <!--End of each box-->
+          <!--each box-->
+          <div class="artist_each_box">
+            <div class="each_img">
+              <img src="/ascendio/img/artist_05.jpg" alt="">
+            </div>
+            <div class="each_text">
+              <h2>JUNGWOO</h2>
+              <h3>정우</h3>
+            </div>
+          </div>
+          <!--End of each box-->
+          <!--each box-->
+          <div class="artist_each_box">
+            <div class="each_img">
+              <img src="/ascendio/img/artist_06.jpg" alt="">
+            </div>
+            <div class="each_text">
+              <h2>MARK</h2>
+              <h3>마크</h3>
+            </div>
+          </div>
+          <!--End of each box-->
+        </div>
       </div>
     </section>
   </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script><!--이번파일에 추가-->
   <script src="/ascendio/js/index.js"></script>
   <script type="text/javascript" src="/ascendio/js/slick.min.js"></script>
   <script src="/ascendio/js/slick.js"></script>
@@ -110,11 +185,11 @@
         dots: true,
         infinite: true,
         autoplay: false,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 7000,
         arrows: false,
         customPaging: function(slider, i) {
           var thumb = ["THE DARK HOLE", "GANGNEUNG", "THE SWORD MAN", "THE NEIGHBORHOOD"];
-          var subThumb = ["DRAMA","FILM","FILM","FILM",]
+          var subThumb = ["DRAMA","FILM","FILM","FILM"];
           
           
         //   // var thumbName = $(slider.$slides[i])
@@ -128,31 +203,5 @@
       });
     });
   </script>
-  <!-- <script type="text/javascript">
-    $(document).ready(function() {
-      $("#lightSlider").lightSlider({
-        mode: "fade",
-        speed: 800, //ms'
-        auto: true,
-        loop: true,
-        slideEndAnimation: true,
-        pause: 8000
-      });
-    });
-  </script> -->
-  <script>
-    // function MainSlider__init() {
-    //   // 캐러셀 그리기
-    //   $('.main-slider').slick({
-    //       dots:true,
-    //       customPaging: function(slider, i) { 
-    //           //console.log($(slider.$slides[i]).html());
-    //           // return '<button class="tab">' + $(slider.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
-    //           // return '<button class="tab"><ul><li>'+$(slider.$slides[i])+'</li></ul></button>';
-    //       },
-    //   });
-    // }
-  </script>
-  
 </body>
 </html>

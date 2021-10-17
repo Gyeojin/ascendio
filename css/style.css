@@ -1,18 +1,30 @@
 .slide {width: 100%; height: 100vh;}
 .slide .slide_box .each_slide {width: 100%!important; height: 100vh!important; position: relative!important;}
 
-.each_slide .text_box{max-width: 1280px; margin: auto; position: relative; z-index: 1; top: 50%; transform: translateY(-50%);}
-.each_slide .text_box b{font-size: 60px; font-weight: 600; display: block;}
-.each_slide .text_box span.movie_sub_title {font-weight: 500; font-size: 30px; letter-spacing: 1.5px;}
-.each_slide .text_box p.desc {
+.slick-slide.slick-active .each_slide .text_box{max-width: 1280px; margin: auto; position: relative; z-index: 1; top: 50%; transform: translateY(-50%);}
+.slick-slide.slick-active .each_slide .text_box b{font-size: 60px; font-weight: 600; display: block; opacity: 0; animation: text-slide 2s 1; animation-delay: 1s; animation-fill-mode: forwards;}
+.slick-slide.slick-active .each_slide .text_box span.movie_sub_title {font-weight: 500; font-size: 30px; letter-spacing: 1.5px; position: relative; left: 200px; animation: text-slide2 2s 1; animation-delay: 1.2s; animation-fill-mode: forwards; opacity: 0;}
+@keyframes text-slide2 {
+  0%{opacity: 0; left: 200px;}
+  100%{opacity: 1; left: 0px;}
+}
+
+.slick-slide.slick-active .each_slide .text_box p.desc {
   width: 500px; 
   -webkit-box-orient:vertical; 
   -webkit-line-clamp:2; 
   display: -webkit-box;
-  font-size: 20px; font-weight: 300; margin: 30px 0; text-overflow: ellipsis; overflow: hidden; _white-space: wrap;}
-.each_slide .text_box .viewmore {width: 100%; height: 20px; display: flex; text-transform: uppercase; cursor: pointer;}
-.each_slide .text_box .viewmore>span {font-size: 20px; font-weight: 300;}
-.each_slide .text_box .viewmore>a{font-size: 24px; font-weight: 300; padding:0 10px;}
+  font-size: 20px; font-weight: 300; margin: 30px 0; text-overflow: ellipsis; overflow: hidden; _white-space: wrap;
+  animation: text-slide 2s 1; animation-delay: 1.4s; animation-fill-mode: forwards;
+  opacity: 0;
+}
+.slick-slide.slick-active .each_slide .text_box .viewmore {width: 100%; height: 20px; display: flex; text-transform: uppercase; cursor: pointer; animation: text-slide 2s 1; animation-delay: 1.6s; animation-fill-mode: forwards; opacity: 0;}
+.slick-slide.slick-active .each_slide .text_box .viewmore>span {font-size: 20px; font-weight: 300;}
+.slick-slide.slick-active .each_slide .text_box .viewmore>a{font-size: 24px; font-weight: 300; padding:0 10px;}
+@keyframes text-slide {
+  0%{opacity: 0; transform: translateX(200px);}
+  100%{opacity: 1; transform: translateX(0px);}
+}
 
 .slick-dots {position: relative; display: flex; justify-content: space-between; width: 100%; max-width: 1200px; margin: auto; transform: translateY(-120px);}
 .slick-dots>li {width: 25%;}
@@ -39,3 +51,17 @@ header .menu {width: 60px; height: 60px; border-radius: 30px; background: #13161
 header .menu span {width: 60%; height: 1px; background: #fff; display: block; margin:auto; position: absolute; left: 50%; transform: translateX(-50%); top: 50%;}
 header .menu span::before {content: ""; width: 100%; height: 1px; background: #fff; display: block; margin: auto; position: absolute; top: -10px;}
 header .menu span::after {content: ""; width: 60%; height: 1px; background: #fff; display: block; margin: auto; position: absolute; top: 10px;}
+
+.artist {z-index: 2; _overflow: hidden;}
+.artist .artist-tit {padding: 150px 0; display: inline-block; position: relative;}
+.artist .artist-tit .star {position: absolute; left: 1.7rem;}
+.artist h2 {font-size: 100px; letter-spacing: 0.2rem; display: inline;}
+.artist .under_line {display: inline; padding-left: 900px; margin-left: 50px; border-bottom: 2px solid rgba(255,255,255,0.3)}
+.artist_container {width: 100%; height: 90vh; overflow-x: scroll; scroll-behavior: smooth; margin-left: 200px;}
+.total_scrollbox { width: 4000px;}
+.total_scrollbox .artist_each_box {width: 350px; display: inline-block; margin-right: 100px;}
+.total_scrollbox .artist_each_box .each_img {width: 100%; height: 500px; overflow: hidden;}
+.total_scrollbox .artist_each_box .each_img img {width:100%;}
+.total_scrollbox .artist_each_box .each_text {width: 100%; height: auto; text-align: right; padding:20px 0;}
+.total_scrollbox .artist_each_box .each_text h2 {font-size: 30px; letter-spacing: 0;}
+.total_scrollbox .artist_each_box .each_text h3 {font-size: 18px; font-weight: 300;}

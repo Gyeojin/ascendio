@@ -14,8 +14,8 @@ img {display: block;}
 em{font-style: normal;}
 b{font-weight: normal;}
 
-.center {width: 100%; margin: auto; max-width: 1230px; height: auto;}
+.center {width: 100%; margin: auto; max-width: 1280px; height: auto;}
 
-.wrap {width: 100%; height: auto; position: relative;}
+.wrap {width: 100%; height: auto; position: relative; overflow: hidden;}
 .clearfix{display: block; content: ''; clear: both;}
 body{font-size: 14px; font-family: 'Roboto', 'Noto Sans KR', sans-serif; background:#1d1d1b; color:#fff; _height: 3000px;}

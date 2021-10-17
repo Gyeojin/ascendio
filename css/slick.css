@@ -95,12 +95,25 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.slick-slide.slick-active img
+{
+    display: block;
+    width: 100%;
+    transform:translateX(-10%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     animation: scale 5s;
 }
+
 @keyframes scale {
-    0% {transform:translateX(-50%) scale(1.5)}
+    0% {transform:translateX(-50%) scale(1.3)}
     100% {transform:translateX(-50%) scale(1)}
 }
+
 .slick-slide.slick-loading img
 {
     display: none;
