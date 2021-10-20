@@ -41,26 +41,24 @@
 // });
 
 $(function () {
-  // $(".artist").mouseover(function () {
-  //   //alert("MouseOver!"); 결과 : 성공
-  //   $(".artist_container").on("scroll touchmove mousewheel", (e) => {
-  //     $("body").scrollTop(0);
+  // $(".artist_container")
+  //   .mouseover(function () {
+  //     $("body").css("overflow-y", "hidden");
+  //   })
+  //   .mouseout(function () {
+  //     $("body").css("overflow-y", "auto");
   //   });
-  //   // $("body").on(
-  //   //   "scroll touchmove mousewheel",
-  //   //   function (e) {
-  //   //     e.preventDefault();
-  //   //     e.stopPropagation();
-  //   //     return false;
-  //   //   },
-  //   //   { passive: false }
-  //   // );
-  // });
 
   $(".artist_container").on("mousewheel", function (e) {
-    $("body").scrollTop(0);
     var wheelDelta = e.originalEvent.wheelDelta;
-    console.log(wheelDelta);
+    var boxWidth = $(this).scrollLeft(); //최소 0 ~ 최대 2464
+    console.log(boxWidth);
+    if (boxWidth == 0 || boxWidth == 2464) {
+      $("body").css("overflow-y", "auto");
+    } else {
+      $("body").css("overflow-y", "hidden");
+    }
+
     if (wheelDelta > 0) {
       //스크롤 up 시 -150 찍힘
       $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());

@@ -18,4 +18,10 @@ b{font-weight: normal;}
 
 .wrap {width: 100%; height: auto; position: relative; overflow: hidden;}
 .clearfix{display: block; content: ''; clear: both;}
-body{font-size: 14px; font-family: 'Roboto', 'Noto Sans KR', sans-serif; background:#1d1d1b; color:#fff; _height: 3000px;}
+body{font-size: 14px; font-family: 'Roboto', 'Noto Sans KR', sans-serif; background:#1d1d1b; color:#fff; _height: 3000px;
+-ms-overflow-style: none; /* IE and Edge */
+scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
